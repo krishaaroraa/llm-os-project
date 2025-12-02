@@ -1,10 +1,10 @@
-# 🧠 FelixOS — LLM-Powered Terminal for Code Generation & Execution
+# FelixOS — LLM-Powered Terminal for Code Generation & Execution
 
 FelixOS is an experimental AI-powered terminal that converts natural-language commands into executable shell scripts, schedules them using a First-Come-First-Served (FCFS) process queue, and manages them through OS-like process states.
 
 This project was developed as part of the IT371 course at NITK Surathkal.
 
-## 🚀 Features
+## Features
 
 Natural Language → Executable Script:
 Prefix any command with `felix`:
@@ -16,18 +16,18 @@ Felix:
 3. Places it in the ready queue
 4. Executes it automatically
 
-## 🔄 FCFS Process Scheduling
+## FCFS Process Scheduling
 Scripts flow through:
 ready_files/ → running_files/ → finished_files/
 
 Implemented using collections.deque for fair FCFS execution.
 
-## 💻 Interactive Terminal Shell
+## Interactive Terminal Shell
 - Normal shell commands (ls, pwd, cd, etc.) still work
 - Only commands prefixed with `felix` trigger the LLM pipeline
 - Boot animation simulates an AI-powered OS startup
 
-## 🤖 Pluggable LLM Backend
+## Pluggable LLM Backend
 Supported models:
 - DeepSeek Coder 1.3B (default)
 - Microsoft Phi
@@ -37,11 +37,11 @@ Supported models:
 
 Built using Transformers + Accelerate + Torch.
 
-## ⚠️ Security Warning
+## Security Warning
 FelixOS executes generated scripts using bash.  
 Do NOT run untrusted prompts on machines with sensitive data.
 
-## 📁 Project Structure
+## Project Structure
 main.py
 model_utils.py
 docs/OS_Report.pdf
@@ -54,7 +54,7 @@ ready_files/
 running_files/
 finished_files/
 
-## 🧩 Installation
+## Installation
 
 python3 -m venv .venv
 source .venv/bin/activate
@@ -67,7 +67,7 @@ python main.py
 Use AI commands:
     felix open youtube and search for classical music
 
-## 🛠️ How It Works
+## How It Works
 1. User input
 2. Detect `felix`
 3. Build LLM instruction
@@ -78,5 +78,5 @@ Use AI commands:
 8. Move to finished_files/
 9. Display output
 
-## 📘 Documentation
+## Documentation
 See docs/OS_Report.pdf
