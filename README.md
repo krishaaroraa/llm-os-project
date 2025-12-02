@@ -55,8 +55,6 @@ running_files/
 finished_files/
 
 ## 🧩 Installation
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
 
 python3 -m venv .venv
 source .venv/bin/activate
@@ -82,19 +80,3 @@ Use AI commands:
 
 ## 📘 Documentation
 See docs/OS_Report.pdf
-
-## 🧭 Future Improvements
-- Python script generation + dependency extraction
-- Additional scheduling algorithms
-- GUI interface
-- Safer execution
-- Script caching
-
-## 👨‍💻 Authors
-Akhil Menon — 231AI005
-Dishanth Arya — 231AI008
-Krisha Arora — 231AI015
-NITK Surathkal
-
-## ⭐ Support
-Star the repository if you like this project!
