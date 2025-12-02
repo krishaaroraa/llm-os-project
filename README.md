@@ -61,7 +61,7 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 
-## ▶️ Usage
+## Usage
 python main.py
 
 Use AI commands:
