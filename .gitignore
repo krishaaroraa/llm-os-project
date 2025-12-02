@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Editor / IDE config
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Felix runtime folders
+ready_files/
+running_files/
+finished_files/
